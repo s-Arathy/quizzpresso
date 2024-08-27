@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="quiz.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="banner.png" alt="banner quizpresso" height="30%" width="100%" />
+    </header>
+    <div class="quizqn">
+      <div class="progress">
+        <div class="noqn" style="width: 20%">2/10</div>
+      </div>
+
+      <div><p id="question">What is the capital of india?</p></div>
+
+      <div class="options">
+        <div>
+          <input type="radio" id="op1" name="answer" value="mumbai" />
+          <label for="op1">Mumbai</label>
+        </div>
+        <div>
+          <input type="radio" id="op2" name="answer" value="delhi" />
+          <label for="op2">Delhi</label>
+        </div>
+        <div>
+          <input type="radio" id="op3" name="answer" value="bangalore" />
+          <label for="op3">Bangalore</label>
+        </div>
+        <div>
+          <input type="radio" id="op4" name="answer" value="hydrabad" />
+          <label for="op4">Hydrabad</label>
+        </div>
+      </div>
+      <div class="button">
+        <button id="skip">SKIP</button>
+        <button id="submit">SUBMIT</button>
+        <button id="again">TRY AGAIN</button>
+      </div>
+    </div>
+    <!--<div class="stats">
+      <p>Correct: <span id="correctCount">0</span></p>
+      <p>Wrong: <span id="wrongCount">0</span></p>
+      <p>Skipped: <span id="skippedCount">0</span></p>
+    </div>-->
+    <div id="final">
+      <p id="correct"></p>
+      <p id="wrong"></p>
+      <p id="skipped"></p>
+    </div>
+    <div id="total"></div>
+  </body>
+</html>
